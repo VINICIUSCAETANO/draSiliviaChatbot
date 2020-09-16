@@ -2,8 +2,9 @@
   "name": "coronabotserver",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "simpleServer.js",
   "scripts": {
+    "dev": "nodemon --inspect simpleServer.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "tunnel": "ngrok http 8080"
   },
@@ -13,5 +14,8 @@
     "actions-on-google": "^2.13.0",
     "dialogflow-fulfillment": "^0.6.1",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
